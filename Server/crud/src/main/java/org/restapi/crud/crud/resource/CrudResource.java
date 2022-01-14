@@ -29,7 +29,7 @@ public class CrudResource {
 	}
 	
 	@POST
-	@Path("/words/insertion")
+	@Path("/words")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.TEXT_PLAIN)
 	public String addWord(CrudModel word){
@@ -37,7 +37,7 @@ public class CrudResource {
 	}
 	
 	@DELETE
-	@Path("/words/delete")
+	@Path("/words")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.TEXT_PLAIN)
 	public String deleteWord(CrudModel word){
@@ -45,7 +45,7 @@ public class CrudResource {
 	}
 	
 	@PUT
-	@Path("/words/update")
+	@Path("/words")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.TEXT_PLAIN)
 	public String updateWord(CrudModel word) {

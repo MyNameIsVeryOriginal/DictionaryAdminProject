@@ -31,7 +31,7 @@ public class Create extends AppCompatActivity {
     String response;
 
     // URL for POST method
-    String urlForPostMethod = "http://192.168.1.41:8080/crud/webapi/crud/words/insertion";
+    String urlForRestMethods = "http://192.168.1.41:8080/crud/webapi/crud/words";
 
 
     @Override
@@ -77,7 +77,7 @@ public class Create extends AppCompatActivity {
             public void run() {
                 try {
                     // Open connection to POST URL
-                    URL url = new URL(urlForPostMethod);
+                    URL url = new URL(urlForRestMethods);
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
                     // Specify parameters for connection

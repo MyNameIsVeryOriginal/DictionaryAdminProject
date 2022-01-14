@@ -31,7 +31,7 @@ public class Delete extends AppCompatActivity {
     String response;
 
     // URL for Delete method
-    String urlForDeleteMethod = "http://192.168.1.41:8080/crud/webapi/crud/words/delete";
+    String urlForRestMethods = "http://192.168.1.41:8080/crud/webapi/crud/words";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +75,7 @@ public class Delete extends AppCompatActivity {
             public void run() {
                 try {
                     // Open connection to DELETE URL
-                    URL url = new URL(urlForDeleteMethod);
+                    URL url = new URL(urlForRestMethods);
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
                     // Specify parameters for connection

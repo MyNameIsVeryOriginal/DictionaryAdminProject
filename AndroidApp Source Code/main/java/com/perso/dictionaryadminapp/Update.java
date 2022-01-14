@@ -41,9 +41,8 @@ public class Update extends AppCompatActivity {
     String updateDef;
     String updateResponse;
 
-    // URLs for GET method and PUT method
-    String urlForGetMethod = "http://192.168.1.41:8080/crud/webapi/crud/words/";
-    String urlForPutMethod = "http://192.168.1.41:8080/crud/webapi/crud/words/update";
+    // URL to connect to database
+    String urlForRestMethods = "http://192.168.1.41:8080/crud/webapi/crud/words";
 
 
     @Override
@@ -104,7 +103,7 @@ public class Update extends AppCompatActivity {
             public void run() {
                 try {
                     // Open connection to GET URL
-                    URL url = new URL(urlForGetMethod + searchData);
+                    URL url = new URL(urlForRestMethods +"/"+ searchData);
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
                     InputStream in = new BufferedInputStream(conn.getInputStream());
@@ -155,7 +154,7 @@ public class Update extends AppCompatActivity {
                 try {
 
                     // Open HTTP connection to url for PUT method
-                    URL url = new URL(urlForPutMethod);
+                    URL url = new URL(urlForRestMethods);
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
                     // Specify parameters for connection
