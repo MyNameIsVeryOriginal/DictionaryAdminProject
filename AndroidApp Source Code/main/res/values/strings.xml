@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">DictionaryAdminApp</string>
+    <string name="hub">Chose your operation</string>
+
+    <string name="create">Create your word</string>
+    <string name="update">Update your word</string>
+    <string name="delete">Delete your word</string>
+
+    <string name="createHeadline">Fill in the form to submit your word</string>
+    <string name="updateHeadline">Update word</string>
+    <string name="deleteHeadline">Fill in the form to delete your word</string>
+
+    <string name="word">Word</string>
+    <string name="type">Type</string>
+    <string name="definition">Definition</string>
+
+    <string name="getWord">Get your word</string>
+    <string name="updateWord">Update your word</string>
+
+    <string name="getWordDef">This is your word</string>
+    <string name="updateWordHeadline">Update the word\'s definition</string>
+    <string name="searchWord">Let\'s get your word</string>
+
+    <string name="updateDef">Enter your new definition</string>
+
+    <string name="submit">Submit</string>
+</resources>
