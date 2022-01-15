@@ -2,6 +2,7 @@ package com.perso.dictionaryadminapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.Looper;
 import android.os.StrictMode;
 import android.util.Log;
 import android.view.View;
@@ -94,6 +95,21 @@ public class Update extends AppCompatActivity {
         } catch (Exception e){
             e.printStackTrace();
         }
+
+        new android.os.Handler(Looper.getMainLooper()).postDelayed(
+                new Runnable() {
+                    public void run() {
+                        Log.i("tag", "This'll run 300 milliseconds later");
+
+                        try {
+                            sendGet();
+                        } catch (Exception e){
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                800);
+
     }
 
     // HTTP URL connection for GET method to get an entry from database
